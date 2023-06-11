@@ -32,30 +32,7 @@
             <div class="d-none d-md-block"><button class="btn btn-light me-2" type="button">Button</button><a class="btn btn-primary" role="button" href="#">Button</a></div>
         </div>
     </nav>
-    <hr class="invisible"><button class="btn btn-primary add-button" type="button" style="width: 100%;">Instalar</button><!DOCTYPE html>
-<html>
-<head>
-  <title>Añadir a pantalla de inicio</title>
-  <script src="https://cdn.jsdelivr.net/npm/safari-web-extension-utils/dist/safari-web-extension-utils.min.js"></script>
-</head>
-<body>
-  <button id="addToHomeButton">Añadir a pantalla de inicio</button>
-
-  <script>
-    document.getElementById('addToHomeButton').addEventListener('click', function() {
-      if (window.safari) {
-        safari.extension.settings.getItem('addedToHome').then(function(added) {
-          if (!added) {
-            safari.extension.settings.setItem('addedToHome', true);
-            safari.extension.dispatchMessage('addToHomescreen');
-          }
-        });
-      }
-    });
-  </script>
-</body>
-</html>
-
+    <hr class="invisible"><button class="btn btn-primary add-button" type="button" style="width: 100%;">Instalar</button>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/js/bs-init.js"></script>
